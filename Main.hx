@@ -3,17 +3,11 @@ package;
 import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.FlxState;
-import flixel.graphics.FlxGraphic;
-import flixel.math.FlxPoint;
-import flixel.system.scaleModes.RatioScaleMode;
 import flixel.util.FlxColor;
-import openfl.Assets;
 import openfl.Lib;
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
-import openfl.display.FPS;
 import openfl.display.Sprite;
-import openfl.display.StageScaleMode;
 import openfl.events.Event;
 
 class Main extends Sprite
@@ -23,10 +17,6 @@ class Main extends Sprite
 	var gameWidth:Int = 960; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
-
-	public static var fpsVar:FPS;
-
-	// You can pretty much ignore everything from here on - your code should go in your states.
 
 	public static function main():Void
 	{
