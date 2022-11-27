@@ -53,10 +53,6 @@ class Main extends Sprite
 
 	public var underlay:Bitmap;
 
-	/*public var edgeLeft:Bitmap;
-		public var edgeRight:Bitmap;
-		public var edgeTop:Bitmap;
-		public var edgeBottom:Bitmap; */
 	private function setupGame():Void
 	{
 		var stageWidth:Int = Lib.current.stage.stageWidth;
@@ -79,16 +75,6 @@ class Main extends Sprite
 
 		game = new FlxGame(gameWidth, gameHeight, PlayState);
 		addChild(game);
-
-		// To hide the edges
-		/*edgeLeft = new Bitmap(black);
-			addChild(edgeLeft);
-			edgeRight = new Bitmap(black);
-			addChild(edgeRight);
-			edgeTop = new Bitmap(black);
-			addChild(edgeTop);
-			edgeBottom = new Bitmap(black);
-			addChild(edgeBottom); */
 
 		stage.addEventListener(Event.RESIZE, onResize);
 
@@ -124,9 +110,6 @@ class Main extends Sprite
 			gameSize.y = height;
 			gameSize.x = Math.ceil(gameSize.y * ratio);
 		}
-
-		// var scaleX = gameSize.x / (FlxG.width * FlxG.initialZoom);
-		// var scaleY = gameSize.y / (FlxG.height * FlxG.initialZoom);
 
 		FlxG.game.x = Math.ceil((width - gameSize.x) * 0.5);
 		FlxG.game.y = Math.ceil((height - gameSize.y) * 0.5);
