@@ -3,7 +3,7 @@
  [![](https://raw.github.com/HaxeFlixel/haxeflixel.com/master/src/files/images/flixel-logos/HaxeFlixel.png)](http://haxeflixel.com/)
  
 ## Credits 🟢
-- **Lunarcleint**: Made the tutorial Video + HaxeFlixel Exaple https://twitter.com/lunarcleint
+- **Lunarcleint**: Made the tutorial Video + Utils https://twitter.com/lunarcleint
 - **Ne_Eo**: Made the Away3D x HaxeFlixel renderer https://twitter.com/Ne_Eo_Twitch
 - **Doggy Dentures**: Made some limitations known, help with Away Builder https://gamebanana.com/members/1790484
  
