@@ -81,7 +81,7 @@ class Main extends Sprite
 		onResize();
 	}
 
-	function onResize(event:Event)
+	function onResize(event:Event = null)
 	{
 		underlay.scaleX = stage.stageWidth;
 		underlay.scaleY = stage.stageHeight;

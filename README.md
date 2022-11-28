@@ -4,7 +4,7 @@
  
 ## Credits 🟢
 - **Lunarcleint**: Made the tutorial Video + Utils https://twitter.com/lunarcleint
-- **Ne_Eo**: Made the Away3D x HaxeFlixel renderer https://twitter.com/Ne_Eo_Twitch
+- **Ne_Eo**: Made the Away3D x HaxeFlixel renderer + Testing https://twitter.com/Ne_Eo_Twitch
 - **Doggy Dentures**: Made some limitations known, help with Away Builder https://gamebanana.com/members/1790484
  
 ## Info 🔵
