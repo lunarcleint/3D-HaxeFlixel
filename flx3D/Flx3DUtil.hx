@@ -17,7 +17,7 @@ class Flx3DUtil
 		return FlxG.stage.stage3Ds.length;
 	}
 
-	public static inline function isAvailable3D():Bool
+	public static inline function is3DAvailable():Bool
 	{
 		@:privateAccess {
 			if (Stage3DManager._stageProxies == null)

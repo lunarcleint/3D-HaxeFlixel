@@ -81,37 +81,9 @@ class Main extends Sprite
 		onResize();
 	}
 
-	function onResize(event:Event = null)
+	function onResize(event:Event)
 	{
-		var width = stage.stageWidth;
-		var height = stage.stageHeight;
 		underlay.scaleX = stage.stageWidth;
 		underlay.scaleY = stage.stageHeight;
-
-		@:privateAccess {
-			FlxG.width = FlxG.initialWidth;
-			FlxG.height = FlxG.initialHeight;
-		}
-
-		var gameSize = new FlxPoint(width, height);
-
-		var ratio:Float = FlxG.width / FlxG.height;
-		var realRatio:Float = width / height;
-
-		var scaledY:Bool = realRatio < ratio;
-
-		if (scaledY)
-		{
-			gameSize.x = width;
-			gameSize.y = Math.ceil(gameSize.x / ratio);
-		}
-		else
-		{
-			gameSize.y = height;
-			gameSize.x = Math.ceil(gameSize.y * ratio);
-		}
-
-		FlxG.game.x = Math.ceil((width - gameSize.x) * 0.5);
-		FlxG.game.y = Math.ceil((height - gameSize.y) * 0.5);
 	}
 }
