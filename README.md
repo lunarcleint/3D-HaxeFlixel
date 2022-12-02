@@ -2,6 +2,9 @@
 
  [![](https://raw.github.com/HaxeFlixel/haxeflixel.com/master/src/files/images/flixel-logos/HaxeFlixel.png)](http://haxeflixel.com/)
  
+### TUTORIAL 1 IS OUT‼️:
+[![Watch the video](https://img.youtube.com/vi/WwTH71btngs/maxresdefault.jpg)](https://youtu.be/WwTH71btngs)
+ 
 ## Credits 🟢
 - **Lunarcleint**: Made the tutorial Video + Utils https://twitter.com/lunarcleint
 - **Ne_Eo**: Made the Away3D x HaxeFlixel renderer + Testing https://twitter.com/Ne_Eo_Twitch
@@ -12,7 +15,7 @@ This uses the [Away3D](https://github.com/openfl/away3d) frame work from OpenFL 
 
 [Away3D](https://github.com/openfl/away3d) uses View3D as its primary container so that is what the FlxView3D works with. 
 
-### Limitations 🔴
+## Limitations 🔴
 - Can not render a model with more then **ONE** texture (can have specular and normal maps).
 - Only supports the follow file formats; `.obj, .awd, .3ds, .ac3d, .md2, .md5, .dae, .dfx`.
 - Amount of View3Ds allowed limited to `FlxG.stage.stage3Ds.length` (preformance dependent in some cases).
