@@ -18,7 +18,7 @@ This uses the [Away3D](https://github.com/openfl/away3d) frame work from OpenFL 
 ## Limitations 🔴
 - Can not render a model with more then **ONE** texture (can have specular and normal maps).
 - Only supports the follow file formats; `.obj, .awd, .3ds, .ac3d, .md2, .md5, .dae, .dfx`.
-- Amount of View3Ds allowed limited to `FlxG.stage.stage3Ds.length` (preformance dependent in some cases).
+- Amount of View3Ds allowed limited to `FlxG.stage.stage3Ds.length` (preformance dependent in some cases). Use `Flx3DUtil.is3DAvailable();` to check if a 3D Instance is available.
 
 ## Requirements 🟡
 
