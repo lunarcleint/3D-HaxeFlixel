@@ -15,6 +15,8 @@ This uses the [Away3D](https://github.com/openfl/away3d) frame work from OpenFL 
 
 [Away3D](https://github.com/openfl/away3d) uses View3D as its primary container so that is what the FlxView3D works with. 
 
+There is a planned implemanation of [Away3D](https://github.com/openfl/away3d) using a more HaxeFlixel like syntax to make the coder easier to work with.
+
 ## Limitations 🔴
 - Can not render a model with more then **ONE** texture (can have specular and normal maps).
 - Only supports the follow file formats; `.obj, .awd, .3ds, .ac3d, .md2, .md5, .dae, .dfx`.
