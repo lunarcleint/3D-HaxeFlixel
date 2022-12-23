@@ -23,6 +23,11 @@ class FlxView3D extends FlxSprite
 	public var view:View3D;
 
 	/**
+	 * Set this flag to true to force the View3D to update during the `draw()` call.
+	 */
+	 public var dirty3D:Bool = true;
+
+	/**
 	 * Creates a new instance of a View3D from Away3D and renders it as a FlxSprite
 	 * ! Call Flx3DUtil.is3DAvailable(); to make sure a 3D stage is usable
 	 * @param x 
@@ -71,15 +76,19 @@ class FlxView3D extends FlxSprite
 			bmp = null;
 		}
 
-		view.dispose();
-		view = null;
+		if (view != null) 
+		{
+			view.dispose();
+			view = null;
+		}
+	
 	}
 
 	@:noCompletion override function draw()
 	{
 		super.draw();
 
-		if (dirty)
+		if (dirty3D)
 		{
 			view.visible = false;
 			FlxG.stage.addChildAt(view, 0);
